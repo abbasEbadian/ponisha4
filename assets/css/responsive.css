@@ -1,0 +1,37 @@
+@media (min-width: 1200px){
+    #main-wrapper.collapsed .sidebar .accordion-button span{
+        display: none;
+    }
+    #main-wrapper.collapsed .sidebar .username{
+        display: none;
+    }
+    #main-wrapper.collapsed .sidebar .bi-person-circle{
+        font-size: 2rem;
+    }
+}
+@media (max-width: 1200px){
+    main#main-wrapper aside.sidebar{
+        right: -360px;
+        width: 360px;
+        top: 50px;
+    }
+    main#main-wrapper .main-content{
+        padding-right: 0;
+    }
+    main#main-wrapper .main-content header{
+        right: 0;
+    }
+    main#main-wrapper.collapsed aside.sidebar{
+        width: 360px;
+        right: 0;
+        
+    }
+    main#main-wrapper.collapsed .main-content{
+        padding-right: 0;
+    }
+    main#main-wrapper.collapsed .main-content header{
+        right: 0;
+    }
+
+
+}

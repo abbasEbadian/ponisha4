@@ -1,0 +1,73 @@
+:root{
+    /* Colors */
+    --bs-primary-dark: #1c2331;
+    --bs-primary-dark--100: #2e3951;
+    --bs-primary-dark--200: #1c2a48;
+    --bs-primary-dark--800: #0098cb;
+    --bs-primary-dark--900:#00b2fd ;
+
+    --bs-secondary--100: #2bbbad;
+
+
+    --bs-grey: #f5f5f5;
+
+    /* Font Size */
+    --fs-h1: 10rem;
+    --fs-h2: 9rem;
+    --fs-h3: 8rem;
+    --fs-h4: 7rem;
+    --fs-h5: 6rem;
+    --fs-h6: 5rem;
+
+    --sidebar-open-width: 20vw;
+    --sidebar-collapsed-width: 64px;
+}
+.bg-primary-dark{
+    background: var(--bs-primary-dark);
+}
+.bg-primary-dark-100{
+    background: var(--bs-primary-dark--100) !important;
+}
+.bg-primary-dark-200{
+    background: var(--bs-primary-dark--200) !important;
+}
+.bg-primary-dark-800{
+    background: var(--bs-primary-dark--800);
+}
+
+.btn.btn-secondary--100{
+    background-color: var(--bs-secondary--100);
+    color: white;
+}
+
+
+.fs-h1{
+    font-size: var(--fs-h1);
+}
+.fs-h2{
+    font-size: var(--fs-h2);
+}
+.fs-h3{
+    font-size: var(--fs-h3);
+}
+.fs-h4{
+    font-size: var(--fs-h4);
+}
+.fs-h5{
+    font-size: var(--fs-h5);
+}
+.fs-h6{
+    font-size: var(--fs-h6);
+}
+
+.border-dashed {
+    border-style: dashed !important; 
+}
+
+.wh-30{
+    width: 24px;
+    height: 24px;
+}
+.text-justify{
+    text-align: justify;
+}

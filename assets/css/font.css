@@ -1,0 +1,5 @@
+@import url('https://farsifont.github.io/css/iransans.css');
+@import url('https://farsifont.github.io/css/iransans-farsi-numbers.css');
+*{
+    font-family: IransansFarsiNumbers,  IRANSans;
+}

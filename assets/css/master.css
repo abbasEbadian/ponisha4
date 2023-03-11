@@ -1,0 +1,131 @@
+@import url(./theme.css);
+@import url(./font.css);
+@import url(./responsive.css);
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: 0.2s;
+}
+
+#main-wrapper {
+    display: flex;
+    flex-wrap: nowrap;
+    height: 100vh;
+    height: 100svh;
+}
+#main-wrapper .main-content{
+    padding-right: var(--sidebar-open-width) ;
+}
+#main-wrapper.collapsed .main-content{
+    padding-right: var(--sidebar-collapsed-width) ;
+}
+#main-wrapper.collapsed .sidebar{
+    width: var(--sidebar-collapsed-width);
+}
+
+#main-wrapper.collapsed .main-content header{
+    right: var(--sidebar-collapsed-width);
+}
+#main-wrapper .sidebar{
+    height: 100%;
+    width: var(--sidebar-open-width);
+    position: fixed;
+    inset: 0 0 0 unset;
+    z-index: 99;
+}
+#main-wrapper .main-content header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: var(--sidebar-open-width);
+    height: 50px;
+    z-index: 99;
+}
+#main-wrapper .sidebar-header .username{
+    margin-top: -2rem;
+}
+#main-wrapper .accordion *{
+    background: transparent;
+    color: var(--bs-light);
+    border-radius: 0;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    transition: 0.2s;
+}
+#main-wrapper .accordion-item{
+    margin-bottom: 8px;
+}
+#main-wrapper .accordion-button:not(.collapsed){
+    background-color: var(--bs-primary-dark--100);
+}
+
+#main-wrapper .accordion-button::after{
+    display: none;
+}
+#main-wrapper .accordion-button.collapsed .arrow{
+    transform:  rotate(0deg);
+}
+#main-wrapper .accordion-button .arrow{
+    transform:  rotate(-90deg);
+    background-color: var(--bs-primary-dark--100);
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    display: grid;
+    place-items: center;
+}
+#main-wrapper .accordion-body a.active{
+    background: var(--bs-primary-dark--100);
+    border-right: 6px solid var(--bs-primary-dark--800);
+}
+#main-wrapper .main-content header{
+    height: 50px;
+}
+#main-wrapper .main-content header .title{
+    color: var(--bs-primary-dark--900);
+}
+#main-wrapper .main-content header .left-side .bi{
+    height: 36px;
+}
+#main-wrapper .main-content header .dropdown *{
+    color: white;
+}
+#main-wrapper .main-content header .dropdown .dropdown-item:hover{
+    background: var(--bs-primary-dark--100);
+}
+
+
+
+section.main-content div.nav-tabs {
+    background: var(--bs-grey);
+    height: 58px;
+    border-bottom: 0;
+}
+section.main-content div.nav-tabs *{
+    background: transparent !important;
+    border-radius: 0;
+    border: none;
+    color: var(--bs-secondary-color);
+}
+section.main-content div.nav-tabs button.active{
+    color: var(--bs-primary);
+    border: 1px dashed var(--bs-primary);
+    border-bottom-width: 3px;
+    border-bottom-style: solid;
+}
+section.main-content div.nav-tabs button.active small{
+    color: inherit;
+}
+.tickets{
+    border: 1px solid  var(--bs-grey);
+}
+.tab-content{
+    
+}
+.ticket-info span  {
+    display: inline-flex;
+    width: 20%;
+    font-weight: 300;
+}
