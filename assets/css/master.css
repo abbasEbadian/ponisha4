@@ -129,3 +129,21 @@ section.main-content div.nav-tabs button.active small{
     width: 20%;
     font-weight: 300;
 }
+.bi-cart{
+    position: relative;
+}
+.bi-cart::after{
+    position: absolute;
+    content: " 0 ";
+    color: white;
+    background: var(--bs-primary);
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    top: -4px;
+    width: 16px;
+    height: 16px;
+    right:  -8px;
+    font-size: 16px;
+    padding-bottom: 8px;
+}
