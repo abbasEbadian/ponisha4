@@ -26,6 +26,6 @@ document.onreadystatechange = function () {
             $main && $main.classList.remove('collapsed');  
         })
 
-
+    // $('#editor').summernote();
     
 }
