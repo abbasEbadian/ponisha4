@@ -16,6 +16,7 @@
 }
 #main-wrapper .main-content{
     padding-right: var(--sidebar-open-width) ;
+    width: 100%;
 }
 #main-wrapper.collapsed .main-content{
     padding-right: var(--sidebar-collapsed-width) ;
@@ -146,4 +147,98 @@ section.main-content div.nav-tabs button.active small{
     right:  -8px;
     font-size: 16px;
     padding-bottom: 8px;
+}
+
+
+/* Ticket List */
+.colored-wrapper {
+    padding: 18px 16px;
+    border-radius: 6px;
+    position: relative;
+    overflow: hidden;
+    color: white;
+    font-weight: bolder;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 0 10px 4px #0002;
+}
+.colored-wrapper .light-icon {
+    position: absolute;
+    left: -50px;
+    font-size: 13rem;
+    color: white;
+    opacity: 0.2;
+    top: -6.5rem;
+    transform: rotate(-45deg);
+}
+.colored-wrapper i:first-of-type {
+    font-size: 20px;
+    margin-left: 8px;
+}
+
+.colored-wrapper.A {
+    background: linear-gradient(0deg, #ffa60d, #ff6e00);
+}
+.colored-wrapper.B {
+    background: linear-gradient(0deg, #00a7ff, #008bff);
+}
+.colored-wrapper.C {
+    background: linear-gradient(0deg, #3970eb, #6955e6);
+}
+.colored-wrapper.D {
+    background: linear-gradient(0deg, #a851ff, #b12fff);
+}
+.colored-wrapper.E {
+    background: linear-gradient(0deg, #00baa1, #00c57f);
+}
+.colored-wrapper.F {
+    background: linear-gradient(0deg, #ff2c74, #ff1f45);
+}
+.colored-wrapper.G {
+    background: linear-gradient(0deg, #ffb117, #ffdc00);
+}
+.colored-wrapper.H {
+    background: linear-gradient(0deg, #fe83c0, #ea1cdc);
+}
+.table-wrapper{
+    overflow: hidden;
+    width: 100%;
+}
+.ticket-list-page table {
+    min-width: 700px;
+}
+.ticket-list-page table tbody tr:nth-last-of-type(odd){
+    background-color: #efefef;
+}
+.ticket-list-page .balance-card{
+    background: linear-gradient(45deg, #065c97, #2488e0, #7a5efa);
+}
+.ticket-list-page .balance-card img{
+    filter: grayscale(1) brightness(100);
+}
+.ticket-list-page .balance-card .foot{
+    background: #2d45aa;
+}
+.ticket-list-page .add-credit{
+    background: #00c851;
+    border: none;
+}
+.ticket-list-page .transactions{
+    background: #33b5e5;
+}
+.ticket-list-page .userinfo{
+    background: linear-gradient(45deg, #50bf8f, #92dcb5);
+    font-size: 14px;
+}
+.ticket-list-page .userinfo img{
+    border: 6px solid #8fd8b7;
+    border-radius: 50%;
+}
+.ticket-list-page .infocard{
+    display: flex;
+    place-items: center ;
+    background: linear-gradient(45deg, #ebedf0, #d9e0e6);
+    border: none;
+    padding: 24px;
+    font-size: 14px;
 }

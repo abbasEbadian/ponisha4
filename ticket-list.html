@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/lib/bootstrap.css">
+    <link rel="stylesheet" href="./assets/css/master.css">
+    <link rel="stylesheet" href="./assets/css/icons.css">
+</head>
+
+<body>
+    <main id="main-wrapper" class="d-flex ticket-list-page collapsed">
+        <aside class="sidebar bg-primary-dark  ">
+            <span class="bi bi-x position-absolute d-block d-xl-none end-0 top-0 p-1 fs-3 text-white"
+                role="button"></span>
+            <div class="sidebar-header d-flex flex-column justify-content-center align-items-center py-3 text-white">
+                <span class="bi bi-person-circle fs-h2 "></span>
+                <span class="fs-5 username"> عباس عبادیان</span>
+            </div>
+            <div class="accordion" id="accordionExample">
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed py-1" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                            <i class="bi bi-speedometer2 me-3 fs-4"></i>
+                            <span> داشبورد </span>
+                            <span class="arrow bi bi-chevron-left text-white ms-auto"></span>
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse  " aria-labelledby="headingOne"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body py-1 d-flex flex-column bg-primary-dark-200 px-0">
+                            <a href="#dashboard_1" class="text-decoration-none py-1 px-3 "> <small>افزایش موجودی
+                                </small> </a>
+                            <a href="#dashboard_2" class="text-decoration-none py-1 px-3"> <small>فهرست تراکنش ها
+                                </small> </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed py-1" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseOneA" aria-expanded="false" aria-controls="collapseOneA">
+                            <i class="bi bi-headset me-3 fs-4"></i>
+                            <span> پشتیبانی </span>
+                            <span class="arrow bi bi-chevron-left text-white ms-auto"></span>
+                        </button>
+                    </h2>
+                    <div id="collapseOneA" class="accordion-collapse collapse  " aria-labelledby="headingOne"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body py-1 d-flex flex-column bg-primary-dark-200 px-0">
+                            <a href="#dashboard_1" class="text-decoration-none py-1 px-3 "> <small> تیکت جدید
+                                </small> </a>
+                            <a href="#dashboard_2" class="text-decoration-none py-1 px-3 active"> <small> فهرست تیکت ها
+                                </small> </a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed py-1" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            <i class="bi bi-globe me-3 fs-4"></i>
+                            <span> دامنه </span>
+                            <span class="arrow bi bi-chevron-left text-white ms-auto"></span>
+                        </button>
+                    </h2>
+                    <div id="collapseFour" class="accordion-collapse collapse  " aria-labelledby="headingOne"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body py-1 d-flex flex-column bg-primary-dark-200 px-0">
+                            <a href="#dashboard_1" class="text-decoration-none py-1 px-3 "> <small> دامنه 1 </small>
+                            </a>
+                            <a href="#dashboard_2" class="text-decoration-none py-1 px-3"> <small> دامنه 2 </small> </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed py-1" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            <i class="bi bi-database me-3 fs-4"></i>
+                            <span> هاست </span>
+                            <span class="arrow bi bi-chevron-left text-white ms-auto"></span>
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse  " aria-labelledby="headingOne"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body py-1 d-flex flex-column bg-primary-dark-200 px-0">
+                            <a href="#dashboard_1" class="text-decoration-none py-1 px-3 "> <small> هاست 1 </small>
+                            </a>
+                            <a href="#dashboard_2" class="text-decoration-none py-1 px-3"> <small> هاست 2 </small> </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed py-1" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            <i class="bi bi-display me-3 fs-4"></i>
+                            <span> مانیتورینگ </span>
+                            <span class="arrow bi bi-chevron-left text-white ms-auto"></span>
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse  " aria-labelledby="headingOne"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body py-1 d-flex flex-column bg-primary-dark-200 px-0">
+                            <a href="#dashboard_1" class="text-decoration-none py-1 px-3 "> <small> مانیتورینگ 1
+                                </small>
+                            </a>
+                            <a href="#dashboard_2" class="text-decoration-none py-1 px-3"> <small> مانیتورینگ 2 </small>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed py-1">
+                            <i class="bi bi-shield-check me-3 fs-4"></i>
+                            <span> گواهی SSL </span>
+                            <span class="arrow bi bi-chevron-left text-white ms-auto"></span>
+                        </button>
+                    </h2>
+
+                </div>
+
+
+
+            </div>
+        </aside>
+        <section class="main-content flex-grow-1 pt-5">
+            <header class="bg-primary-dark d-flex align-items-center text-white px-2">
+                <span class="bi bi-list fs-2" role="button"></span>
+                <span class="date"></span>
+                <div class="dropdown">
+                    <button class="btn bg-transparent border-none dropdown-toggle d-flex align-items-center"
+                        type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <span class="bi bi-person-circle fs-5 me-2"></span>
+                        <span class="name"> عباس عبادیان </span>
+                    </button>
+                    <ul class="dropdown-menu bg-dark">
+                        <li><a class="dropdown-item" href="#">Link 1</a></li>
+                        <li><a class="dropdown-item" href="#">Link 2</a></li>
+                        <li><a class="dropdown-item" href="#">Link 3</a></li>
+                    </ul>
+                </div>
+                <span class="bi bi-bell fs-5"></span>
+
+                <div class="left-side d-flex ms-auto align-items-center">
+                    <div role="button" class="d-none d-md-block bi bi-search fs-4"></div>
+                    <div role="button" class="d-none d-md-block  bi bi-cart fs-4 mx-3"></div>
+                    <div role="button" class="d-none d-md-block bi bi-house fs-4"></div>
+
+                    <h3 class="mb-0 ms-3 title">
+                        <i>
+                            <strong>myrang</strong>
+                        </i>
+                    </h3>
+                </div>
+            </header>
+
+            <article class="p-3 px-xl-3 py-5">
+                <div class="row row-gap-4">
+                    <div class="col-12 col-md-6 col-xl-3">
+                        <div class="colored-wrapper A">
+                            <i class="bi bi-globe-central-south-asia"></i>
+                            <small>خرید دامنه و هاست</small>
+                            <i class="bi bi-chevron-compact-right light-icon"></i>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-xl-3">
+                        <div class="colored-wrapper B">
+                            <i class="bi bi-database"></i>
+                            <small> خرید هاست پرمیوم </small>
+                            <i class="bi bi-chevron-compact-right light-icon"></i>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-xl-3">
+                        <div class="colored-wrapper C">
+                            <i class="bi bi-cloud-fog2-fill"></i>
+                            <small> خرید سرور مجازی </small>
+                            <i class="bi bi-chevron-compact-right light-icon"></i>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-xl-3">
+                        <div class="colored-wrapper D">
+                            <i class="bi bi-hdd-network-fill"></i>
+                            <small> خرید سرور اختصاصی </small>
+                            <i class="bi bi-chevron-compact-right light-icon"></i>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-xl-3">
+                        <div class="colored-wrapper E">
+                            <i class="bi bi-easel-fill"></i>
+                            <small> طراحی وبسایت </small>
+                            <i class="bi bi-chevron-compact-right light-icon"></i>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-xl-3">
+                        <div class="colored-wrapper F">
+                            <i class="bi bi-shield-check"></i>
+                            <small> خرید صدور گواهی SSL </small>
+                            <i class="bi bi-chevron-compact-right light-icon"></i>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-xl-3">
+                        <div class="colored-wrapper G">
+                            <i class="bi bi-envelope-check-fill"></i>
+                            <small>خرید لایسنس اسمارت میل </small>
+                            <i class="bi bi-chevron-compact-right light-icon"></i>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-xl-3">
+                        <div class="colored-wrapper H">
+                            <i class="bi bi-wordpress"></i>
+                            <small> خرید لایسنس پلسک </small>
+                            <i class="bi bi-chevron-compact-right light-icon"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-secondary-subtle border-3 border-start border-primary mt-5 p-2 shadow-sm d-flex align-items-center">
+                    <i class="bi bi-headphones text-primary fs-4 me-2"></i>
+                    <b>تیکت های فعال</b>
+                </div>
+                <div class="border border-1 border-secondary-subtle px-2">
+                    <div class="d-flex justify-content-between py-3">
+                        <a href="#a" class="btn btn-primary rounded-0 border-0 shadow">
+                            <i class="bi bi-plus"></i>
+                            <small>تیکت جدید</small>
+                        </a>
+                        <a href="#a" class="btn btn-primary rounded-0 border-0 shadow">
+                            <i class="bi bi-plus"></i>
+                            <small> فهرست تیکت ها </small>
+                        </a>
+                    </div>
+
+
+
+                   <div class="table-responsive">
+                    <table class="table ">
+                        <thead>
+                          <tr class="table-secondary">
+                            <th scope="col"> <small>وضعیت</small></th>
+                            <th scope="col"> <small>شماره</small></th>
+                            <th scope="col" colspan="2"> <small>عنوان</small></th>
+                            <th scope="col"> <small>واحد</small></th>
+                            <th scope="col"> <small>سرویس</small></th>
+                            <th scope="col"> <small>پاسخ ها</small></th>
+                            <th scope="col"> <small> تاریخ ارسال </small></th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">
+                                <i class="bi bi-info-circle-fill text-primary"></i> <small>/</small> -
+                            </th>
+                            <td class="text-primary">769845</td>
+                            <td class="text-primary" colspan="2"> <small>رویداد سرور : انتقال هاست</small>  </td>
+                            <td> هاستینگ </td>
+                            <td> دامنه و هاست </td>
+                            <td> [0] </td>
+                            <td dir="ltr" class="text-start"> 1401/10/12 - 18:50 </td>
+
+                          </tr>
+                          <tr>
+                            <th scope="row">
+                                <i class="bi bi-info-circle-fill text-primary"></i> <small>/</small> -
+                            </th>
+                            <td class="text-primary">769845</td>
+                            <td class="text-primary" colspan="2"> <small>رویداد سرور : انتقال هاست</small>  </td>
+                            <td> هاستینگ </td>
+                            <td> دامنه و هاست </td>
+                            <td> [0] </td>
+                            <td dir="ltr" class="text-start"> 1401/10/12 - 18:50 </td>
+
+                          </tr>
+                          <tr>
+                            <th scope="row">
+                                <i class="bi bi-info-circle-fill text-primary"></i> <small>/</small> -
+                            </th>
+                            <td class="text-primary">769845</td>
+                            <td class="text-primary" colspan="2"> <small>رویداد سرور : انتقال هاست</small>  </td>
+                            <td> هاستینگ </td>
+                            <td> دامنه و هاست </td>
+                            <td> [0] </td>
+                            <td dir="ltr" class="text-start"> 1401/10/12 - 18:50 </td>
+
+                          </tr>
+                          <tr>
+                            <th scope="row" class="d-flex">
+                                <i class="bi bi-check-circle-fill text-success"></i> <small class="mx-1">/</small> <div class="bi bi-caret-up-fill"></div>
+                            </th>
+                            <td class="text-primary">798521</td>
+                            <td class="text-primary" colspan="2"> <small>رویداد سرور : انتقال هاست</small>  </td>
+                            <td> هاستینگ </td>
+                            <td> دامنه و هاست </td>
+                            <td> [1] </td>
+                            <td dir="ltr" class="text-start"> 1401/10/12 - 18:50 </td>
+
+                          </tr>
+                         
+                        </tbody>
+                      </table>
+                   </div>
+                </div>
+                
+                <div class="row mt-4 row-gap-3">
+                    <div class="col-12 col-md-6 col-xl-3">
+                        <div class="balance-card card d-flex flex-column justify-content-between align-items-center shadow">
+                            <div class="inner pb-3 w-100"> 
+                                <div class="d-flex justify-content-between w-100 p-2">
+                                    <small class="text-white">پشتیبان کاربلد</small>
+                                    <img src="./assets/img/logo.png" alt="support sign" width="60px" height="25px"> 
+                                </div>
+                                <small class="py-3 d-block text-center text-white">4565a4sd8a7s5d  4d8asd54a 5sd4</small>
+                            </div>
+                            <div class="foot d-grid justify-content-center align-items-center w-100 py-1 text-white">
+                                <small>0 تومان</small>
+                            </div>
+                        </div>
+                        <a href="#add-credit" class="btn add-credit text-white mt-3 w-100 shadow"> <small>افزایش موجودی</small></a>
+                        <a href="#transactions" class="btn transactions text-white mt-3 w-100 shadow"> <small>  فهرست تراکنش های حساب </small></a>
+                        <p class="d-flex mt-3 mb-0">
+                            <small>جمع واریز</small>
+                            <span class="ms-auto">
+                                <small class="text-success"> 17,754,564 </small>
+                                <small class="text-secondary"> تومان </small>
+                            </span>
+
+                        </p>
+                        <hr class="border-secondary-subtle my-1"/>
+                        <p class="d-flex">
+                            <small>جمع برداشت</small>
+                            <span class="ms-auto">
+                                <small class="text-danger"> 17,754,564 </small>
+                                <small class="text-secondary"> تومان </small>
+                            </span>
+
+                        </p>
+                    </div>
+                    <div class="col-12 col-md-6 col-xl-3">
+                        <div class="card userinfo  border-0  p-2 shadow">
+                            <div class="d-flex align-items-center justify-content-between">
+                                <div class="d-flex flex-column">
+                                    <small><b> پشتیبان نمونه </b></small>
+                                    <small class="text-secondary my-1"> آخرین ورود 24 بهمن 1401 - 00:25 </small>
+                                    <small class="text-secondary">  5.25.113.2 </small>
+                                </div>
+                                <img src="./assets/img/user.png" alt="user icon" width="52px" height="52px" class="me-2">
+                            </div>
+                            <div class="d-flex mt-2">
+                                <span class="d-flex align-items-center justify-content-center bg-white py-0 px-1 rounded-1 me-2">
+                                    <small class="bi bi-envelope">
+                                       
+                                    </small>
+                                </span>
+                                support@gmail.com
+                            </div>
+                            <div class="d-flex mt-2">
+                                <span class="d-flex align-items-center justify-content-center bg-white py-0 px-1 rounded-1 me-2">
+                                    <small class="bi bi-phone">
+                                       
+                                    </small>
+                                </span>
+                                09149149149
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-xl-6 row row-gap-4 p-0 mx-auto  ">
+                        <div class="col-6 col-lg-3">
+                            <div class="infocard card shadow-sm">
+                                <span class="bg-white px-1 py-0 rounded-1">
+                                    <i class="bi bi-headphones fs-4"></i>
+                                </span>
+                                <small class="text-secondary my-2 text-nowrap"> صدای مشتری</small>
+                                <small class="text-nowrap"> واحد بازرسی </small>
+                            </div>
+                        </div>
+                        <div class="col-6 col-lg-3">
+                            <div class="infocard card shadow-sm">
+                                <span class="bg-white px-1 py-0 rounded-1">
+                                    <i class="bi bi-phone fs-4"></i>
+                                </span>
+                                <small class="text-secondary my-2"> تلفن </small>
+                                <small> 0218545748  </small>
+                            </div>
+                        </div>
+                        <div class="col-6 col-lg-3">
+                            <div class="infocard card shadow-sm">
+                                <span class="bg-white px-1 py-0 rounded-1">
+                                    <i class="bi bi-voicemail fs-4"></i>
+                                </span>
+                                <small class="text-secondary my-2"> فکس </small>
+                                <small> 0215648548  </small>
+                            </div>
+                        </div>
+                        <div class="col-6 col-lg-3">
+                            <div class="infocard card shadow-sm">
+                                <span class="bg-white px-1 py-0 rounded-1">
+                                    <i class="bi bi-envelope fs-4"></i>
+                                </span>
+                                <small class="text-secondary my-2"> ایمیل </small>
+                                <small>  test@gmail.com </small>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-6">
+                            <div class="infocard card shadow-sm">
+                                <span class="bg-white px-1 py-0 rounded-1">
+                                    <i class="bi bi-envelope fs-4"></i>
+                                </span>
+                                <small class="text-secondary my-2"> آدرس </small>
+                                <small>  تهران سمت چپ </small>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-6">
+                            <div class="infocard card shadow-sm p-3">
+                               <img src="./assets/img/map.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+               
+
+
+            </article>
+        </section>
+    </main>
+    <script src="/assets/lib/bootstrap.js"></script>
+    <script src="/assets/js/master.js"></script>
+</body>
+
+</html>
