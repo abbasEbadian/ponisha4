@@ -9,6 +9,14 @@
         font-size: 2rem;
     }
 }
+@media (max-width: 768px){
+    div.help-items .help-item{
+        width: 160px;
+    }
+    .help-items .help-item * {
+        font-size: 13px;
+    }
+}
 @media (max-width: 1200px){
     main#main-wrapper aside.sidebar{
         right: -360px;

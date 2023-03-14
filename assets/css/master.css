@@ -242,3 +242,38 @@ section.main-content div.nav-tabs button.active small{
     padding: 24px;
     font-size: 14px;
 }
+.search-box{
+    position: relative;
+    width: 50%;
+}
+.search-box .bi{
+    position: absolute;
+    right: 8px;
+    top: 6px;
+}
+.search-box input{
+    padding-right: 32px;
+}
+td .chat-count{
+    background: var(--bs-dark-border-subtle);
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    color: white;
+    width: 24px;
+    height: 24px;
+}
+.help-items{
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 16px;
+}
+.help-items .help-item{
+    width: 200px;
+}
+.status-help {
+    border-color: #d3ebf6;
+}
+.status-help .card-header{
+    background: linear-gradient(0, #c0e3f2, #d3ebf6);
+}
