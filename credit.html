@@ -232,7 +232,7 @@
                             </div>
                             <div class="col-12 col-lg-7 ">
                                 <div class="input-group">
-                                    <input type="text" class="form-control credit-pricinput text-end" placeholder="">
+                                    <input type="text" class="form-control credit-pricinput text-end" placeholder="" oninput="document.querySelector('.price-target').innerHTML=Number(this.value).toLocaleString('fa')">
                                     <span class="input-group-text" id="basic-addon1"> تومان </span>
                                   </div>
                             </div>
