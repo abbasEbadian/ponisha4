@@ -30,7 +30,7 @@ document.onreadystatechange = function () {
 }
 
 function initTabs() {
-    const tabs = document.querySelector('.domains-page .tabs')
+    const tabs = document.querySelector('.domains-page .page-tabs')
     if(!tabs) return
     const tables = document.querySelectorAll('.domains-page table')
     for (let tab of tabs.children){

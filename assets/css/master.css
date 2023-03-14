@@ -324,19 +324,23 @@ td .chat-count{
     width: 24px;
     height: 24px;
 }
-.domains-page .tabs {
+.domains-page .page-tabs {
     margin-bottom: 6px;
 }
 .domains-page table {
     min-width: 850px ;
 }
-.domains-page .tabs .btn{
+.domains-page .page-tabs .btn{
     border: none;
     padding-block: 7px;
     font-size: 13px;
     border-radius: 0;
 }
-.domains-page .tabs button.active{
+.domains-page .page-tabs button.active{
     border-bottom: 2px solid var(--bs-primary);
     color: var(--bs-primary);
+}
+.credit-page .heading-card .card-body{
+    border: 1px solid var(--bs-gray-200);
+    border-top: 0;
 }
