@@ -24,8 +24,26 @@ document.onreadystatechange = function () {
     for(let button of $sidebarButton)
         button.addEventListener('click', function (e) {
             $main && $main.classList.remove('collapsed');  
-        })
-
-    // $('#editor').summernote();
+    })
     
+    initTabs()
+}
+
+function initTabs() {
+    const tabs = document.querySelector('.domains-page .tabs')
+    if(!tabs) return
+    const tables = document.querySelectorAll('.domains-page table')
+    for (let tab of tabs.children){
+        tab.addEventListener('click', function (event) {
+            const tableID = tab.getAttribute('data-table-target')
+            for (let table of tables){
+                table.classList.add("d-none")
+            }
+            document.querySelector(`[data-table-id='${tableID}']`).classList.remove('d-none')
+            for (let tab of tabs.children){
+                tab.classList.remove('active')
+            }
+            event.target.classList.add('active')
+        })
+    }
 }

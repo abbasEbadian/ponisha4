@@ -6,6 +6,7 @@
     padding: 0;
     box-sizing: border-box;
     transition: 0.2s;
+    font-size: 14px;
 }
 
 #main-wrapper {
@@ -276,4 +277,66 @@ td .chat-count{
 }
 .status-help .card-header{
     background: linear-gradient(0, #c0e3f2, #d3ebf6);
+}
+
+
+/* DOMAINS */
+.domains-page thead th {
+    background: #a6dce8;
+}
+.domains-page  th, .domains-page  td{
+    align-items: center;
+    vertical-align: middle;
+}
+.domains-page  tbody tr:nth-of-type(odd) {
+    background: #f2f2f2;
+}
+.domains-page tr > *:first-of-type{
+    width: 50px;
+    text-align: center;
+}
+
+.domains-page tr > *:first-of-type > .bi{
+    display: none;
+}
+.domains-page tr:hover > *:first-of-type > .bi{
+    display: block  ;
+}
+
+.domains-page .actions{
+    display: flex;
+    column-gap: 4px;
+}
+.domains-page [type=checkbox]{
+    border-color: var(--bs-gray-500);
+}
+.domains-page .actions button small{
+    display: grid;
+    place-items: center;
+}
+.domains-page .actions button{
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    background: white;
+    border: none;
+    box-shadow: 2px 0 6px 2px #0002;
+    width: 24px;
+    height: 24px;
+}
+.domains-page .tabs {
+    margin-bottom: 6px;
+}
+.domains-page table {
+    min-width: 850px ;
+}
+.domains-page .tabs .btn{
+    border: none;
+    padding-block: 7px;
+    font-size: 13px;
+    border-radius: 0;
+}
+.domains-page .tabs button.active{
+    border-bottom: 2px solid var(--bs-primary);
+    color: var(--bs-primary);
 }
