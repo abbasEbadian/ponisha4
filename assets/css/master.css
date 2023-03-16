@@ -243,7 +243,7 @@ section.main-content div.nav-tabs button.active small{
 }
 .search-box{
     position: relative;
-    /* width: 50%; */
+    z-index: 999;
 }
 
 .search-box .bi{

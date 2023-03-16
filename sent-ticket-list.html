@@ -148,9 +148,9 @@
                         <span class="name"> عباس عبادیان </span>
                     </button>
                     <ul class="dropdown-menu bg-dark">
-                        <li><a class="dropdown-item" href="#">Link 1</a></li>
-                        <li><a class="dropdown-item" href="#">Link 2</a></li>
-                        <li><a class="dropdown-item" href="#">Link 3</a></li>
+                        <li><a class="dropdown-item" href="#"> تغییر مشخصات کاربری </a></li>
+                        <li><a class="dropdown-item" href="#"> تغییر گذرواژه </a></li>
+                        <li><a class="dropdown-item" href="#"> خروج </a></li>
                     </ul>
                 </div>
                 <span class="bi bi-bell fs-5"></span>
@@ -184,9 +184,55 @@
                             </a>
                         </div>
 
-                        <div class="search-box col-12 col-md-6">
-                            <i class="bi bi-search"></i>
-                            <input name="search" class="form-select form-select-sm" placeholder="جستجو"></input>
+                        <div class="search-box col-12 col-md-6 position-relative">
+                            <i class="bi bi-search ps-2"></i>
+                            <input name="search" class="form-control form-control-sm" placeholder="جستجو"></input>
+                            <span class="bi bi-chevron-down   end-0 pe-2 toggler" role="button"></span>
+
+                            <div class="advanced-box p-3 d-none">
+                                <div class="row row-gap-4">
+                                    <div class="col-3"> <small class="text-nowrap"> نوع جستجو </small></div>
+                                    <div class="col-9">
+                                        <select class="form-select form-select-sm" name="" id="">
+                                            <option value=""> همه موارد </option>
+                                            <option value=""> نوع یک </option>
+                                        </select>
+                                    </div>
+                                    <div class="col-3"> <small class="text-nowrap"> وضعیت </small></div>
+                                    <div class="col-9">
+                                        <select class="form-select form-select-sm" name="" id="">
+                                            <option value="">  فعال </option>
+                                            <option value=""> غیرفعال</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-3"> <small class="text-nowrap"> تاریخ </small></div>
+                                    <div class="col-9">
+                                        <select class="form-select form-select-sm" name="" id="">
+                                            <option value="">  تاریخ انجام سفارش </option>
+                                        </select>
+                                          
+                                    </div>
+                                    <div class="col-3"> <small class="text-nowrap"> تاریخ شروع </small></div>
+                                    <div class="col-9 position-relative">
+                                        <span class="bi bi-calendar calendar-opener" onclick="event.target.nextElementSibling.click()">
+                                        </span>
+                                        <input type="date"  class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+
+                                    </div>
+                                    <div class="col-3"> <small class="text-nowrap"> تاریخ پایان </small></div>
+                                    <div class="col-9 position-relative">
+                                        <span class="bi bi-calendar calendar-opener" onclick="event.target.nextElementSibling.click()">
+                                        </span>
+                                        <input type="date"  class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+
+                                    </div>
+                                    <div class="col-3"></div>
+                                    <button class="btn btn-secondary--100 w-25 rounded-0 shadow btn-sm"> جستجو </button>
+                                    <button class="btn btn-secondary--100 w-25 rounded-0 shadow btn-sm"> 
+                                        <div class="bi bi-search"></div>
+                                    </button>
+                                </div>
+                            </div>
                         </div>
 
                     </div>
