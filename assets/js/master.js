@@ -27,7 +27,22 @@ document.onreadystatechange = function () {
     })
     
     initTabs()
-    const captcha = new Captcha($('#canvas'));
+    if(typeof Captcha !=='undefined' && document.querySelector('#canvas') ){
+        new Captcha($('#canvas'));
+    }
+    
+    const searchOpener = document.querySelector(".search-box .toggler")
+    const searchAdvanced = document.querySelector(".search-box .advanced-box ")
+    searchOpener && searchOpener.addEventListener('click', function (e) {
+        searchAdvanced&&searchAdvanced.classList.toggle('d-none')
+        if (searchOpener.classList.contains('bi-chevron-down')) {
+            searchOpener.classList.remove("bi-chevron-down")
+            searchOpener.classList.add("bi-x")
+        }else{
+            searchOpener.classList.add("bi-chevron-down")
+            searchOpener.classList.remove("bi-x")
+        }
+    })
 }
 
 function initTabs() {
