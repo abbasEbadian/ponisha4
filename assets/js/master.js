@@ -27,6 +27,7 @@ document.onreadystatechange = function () {
     })
     
     initTabs()
+    const captcha = new Captcha($('#canvas'));
 }
 
 function initTabs() {

@@ -71,3 +71,45 @@
 .text-justify{
     text-align: justify;
 }
+
+/* #region ICONED INPUT  */
+
+    .iconed-input-box{
+        position: relative;
+    }
+    .iconed-input-box .icon{
+        position: absolute;
+        right: 16px;
+        top: 8px;
+        color: #aaa;
+        z-index: 9;
+    }
+    .iconed-input-box input{
+        padding-right: 40px;
+    }
+    
+    .iconed-input-box input::placeholder{
+        color: #aaa;
+        
+}
+/* #regionend ICONED INPUT END */
+
+
+/* #region FLOATING LABEL INPUT  */
+
+.floated-input-box{
+    position: relative;
+}
+.floated-input-box label{
+    position: absolute;
+    right: 16px;
+    top: -8px;
+    color: #555;
+    background: white;
+    padding-inline: 4px;
+    font-size: 11px;
+}
+.floated-input-box input::placeholder{
+    color: #aaa; 
+}
+/* #regionend FLOATING LABEL INPUT END */
