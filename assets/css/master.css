@@ -391,3 +391,8 @@ td .chat-count{
     max-width: 360px;
     margin-inline: auto;
 }
+
+
+#editor.editorAria {
+    min-height: 200px;
+}
