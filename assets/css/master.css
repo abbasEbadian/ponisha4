@@ -384,3 +384,10 @@ td .chat-count{
     max-width: 360px;
     margin-inline: auto;
 }
+.forget-page, .login-page{
+    padding-top: 100px;
+}
+.forget-page .card{
+    max-width: 360px;
+    margin-inline: auto;
+}
