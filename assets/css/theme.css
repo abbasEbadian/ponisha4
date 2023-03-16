@@ -113,3 +113,7 @@
     color: #aaa; 
 }
 /* #regionend FLOATING LABEL INPUT END */
+
+.text-vsmall{
+    font-size: 0.6rem;
+}
