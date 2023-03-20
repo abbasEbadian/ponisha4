@@ -42,6 +42,15 @@ document.onreadystatechange = function () {
             searchOpener.classList.remove("bi-x")
         }
     })
+    $(".textarea-with-counter").attr('maxlength', 500)
+        .on("input", function (e) {
+            let value = String(e.target.value)
+            const len = value.length
+            const remaining = 500 - len
+            $(e.target).next('.textarea-counter').find('.count').text(remaining)
+
+        })
+        .trigger("input")
 }
 
 function initTabs() {

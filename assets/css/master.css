@@ -396,3 +396,8 @@ td .chat-count{
 #editor.editorAria {
     min-height: 200px;
 }
+.rating-system img {
+    width: 54px;
+    margin-top: 16px;
+    margin-left: 16px;
+}

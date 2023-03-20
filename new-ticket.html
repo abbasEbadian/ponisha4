@@ -179,16 +179,16 @@
                 <section class="tickets">
                     <nav>
                         <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                            <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab"
+                            <button class="nav-link " id="nav-home-tab" data-bs-toggle="tab"
                                 data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home"
                                 aria-selected="true"> <small>تیکت</small> </button>
-                            <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab"
+                            <button class="nav-link active" id="nav-profile-tab" data-bs-toggle="tab"
                                 data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile"
                                 aria-selected="false"> <small>نظرسنجی</small></button>
                         </div>
                     </nav>
                     <div class="tab-content p-2" id="nav-tabContent">
-                        <div class="tab-pane fade show active" id="nav-home" role="tabpanel"
+                        <div class="tab-pane fade " id="nav-home" role="tabpanel"
                             aria-labelledby="nav-home-tab" tabindex="0">
                             <button type="submit" class="btn btn-secondary--100 shadow rounded-0  my-2 mb-4"
                                 href="/new-ticket.html">
@@ -431,8 +431,70 @@
 
                             </div>
                         </div>
-                        <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab"
-                            tabindex="0">...</div>
+                        <div class="tab-pane fade show active" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab"
+                            tabindex="0">
+                            <div class="bg-secondary bg-opacity-25 rounded-1 p-2">
+                                <p>
+                                    کاربر گرامی،
+                                    <br>
+                                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.
+                                </p>
+                            </div>
+                            <form action="#rate">
+                                <div class="row p-2 p-lg-4 rating-system row-gap-2">
+                                    <div class="col-12 col-lg-3">
+                                        میزان رضایتمندی
+                                    </div>
+                                    <div class="col-12 col-lg-9">
+                                        <div class="d-flex flex-row-reverse justify-content-end">
+                                            <div class="form-check">
+                                                <input type="radio" class="form-check-input" name="rate" value="-2">
+                                                <img src="/assets/img/emoji.png" alt="rate -2">
+                                                <br>
+                                                <small> عصبانی </small>
+                                            </div>
+                                            <div class="form-check">
+                                                <input type="radio" class="form-check-input" name="rate" value="-1" >
+                                                <img src="/assets/img/emoji(1).png" alt="rate -1">
+                                                <br>
+                                                <small> ناراحت </small>
+                                                
+                                            </div>
+                                            <div class="form-check">
+                                                <input type="radio" class="form-check-input" name="rate" value="0" >
+                                                <img src="/assets/img/emoji(2).png" alt="rate 0">
+                                                <br>
+                                                <small> معمولی </small>
+                                            </div>
+                                            <div class="form-check">
+                                                <input type="radio" class="form-check-input" name="rate" value="1" >
+                                                <img src="/assets/img/emoji(3).png" alt="rate 1">
+                                                <br>
+                                                <small> خوب </small>
+                                            </div>
+                                            <div class="form-check">
+                                                <input type="radio" class="form-check-input" name="rate" value="2" >
+                                                <img src="/assets/img/emoji(4).png" alt="rate 2">
+                                                <br>
+                                                <small> خوشحال </small>
+                                            </div>
+    
+                                        </div>
+                                    </div>
+                                </div>
+                                <textarea name="comment"  rows="5" class="form-control textarea-with-counter"  placeholder="نظر" value=""></textarea>
+                                <small class="textarea-counter d-block text-end">
+                                    تعداد کاراکتر باقیمانده: <span class="count">  500  </span>
+                                </small>
+                                <button type="submit" class="btn btn-success btn-sm rounded-0 shadow px-5"> ارسال </button>
+                                <br />
+                                <br />
+                                <small> میزان رضایتمندی شما از نحوه پاسخگویی به این تیکت:  <span>  0.0 %</span> </small>
+                                <br />
+                                <small> میزان رضایتمندی شما از نحوه پاسخگویی به کل تیکت ها شما:   <span>  93.0 %</span> </small>
+
+                            </form>
+                        </div>
                     </div>
                 </section>
 

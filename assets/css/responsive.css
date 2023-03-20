@@ -16,6 +16,10 @@
     .help-items .help-item * {
         font-size: 13px;
     }
+    div.rating-system img {
+        width: 28px;
+       
+    }
 }
 @media (max-width: 1200px){
     main#main-wrapper aside.sidebar{
