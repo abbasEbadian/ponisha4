@@ -6,8 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
     <link rel="stylesheet" href="./assets/lib/bootstrap.css">
     <link rel="stylesheet" href="./assets/css/master.css">
+    <link rel="stylesheet" href="./assets/lib/wys.css">
     <link rel="stylesheet" href="./assets/css/icons.css">
 </head>
 
@@ -333,7 +336,154 @@
                                                 </div>
                                             </div>
                                         </div>
-
+                                        
+                                        <div class="answer">
+                                            <div class="ticket-wrapper  p-1 px-2 mt-4">
+                                                <h5> پاسخ  </h5>
+        
+                                                <small class="text-black-50 form-text mt-3">
+                                                    » لطفا عنوان و متن تیکت خود را با خط فارسی بنویسید.
+                                                </small>
+        
+        
+                                                <div class="custom-tabs">
+                                                    <div class="d-flex mt-3">
+                                                        <div class="form-check me-4">
+                                                            <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                                                checked id="flexRadioDefault1" data-target="tab1">
+                                                            <label class="form-check-label" for="flexRadioDefault1">
+                                                                <small> انتخاب از عناوین مرتبط</small>
+                                                            </label>
+                                                        </div>
+            
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                                                id="flexRadioDefault2" data-target="tab2">
+                                                            <label class="form-check-label" for="flexRadioDefault2">
+                                                                <small>
+                                                                    وارد کردن عنوان جدید
+                                                                </small>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <select class="form-select form-select" aria-label=".form-select-sm example" data-id="tab1">
+                                                        <option selected> لطفا انتخاب کنید </option>
+                                                        <option value="1"> اولویت ۱ </option>
+                                                        <option value="2"> اولویت۲ </option>
+                                                        <option value="3"> اولویت۳ </option>
+                                                    </select>
+    
+                                                    <input class="form-control d-none" type="text" placeholder="عنوان" data-id="tab2"></input>
+                                                </div>
+        
+                                                <div class="row align-items-center justify-content-center">
+                                                    <div class="col-12 ">
+                                                        <div class="editor mt-3" id="editor-1">
+                                                            <div class="toolbar">
+                                                                <a href="#" data-command='undo' data-toggle="tooltip"
+                                                                    data-placement="top" title="Undo"><i
+                                                                        class='fa fa-undo'></i></a>
+                                                                <a href="#" data-command='redo' data-toggle="tooltip"
+                                                                    data-placement="top" title="Redo"><i
+                                                                        class='fa fa-redo '></i></a>
+                                                                <a href="#" data-command='removeFormat' data-toggle="tooltip"
+                                                                    data-placement="top" title="Clear format"><i
+                                                                        class='fa fa-times '></i></a>
+                                                                <div class="fore-wrapper"><i class='fa fa-font'
+                                                                        data-toggle="tooltip" data-placement="top"
+                                                                        title="text color" style='color:#C96;'></i>
+                                                                    <div class="fore-palette">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="back-wrapper"><i class='fa fa-font'
+                                                                        data-toggle="tooltip" data-placement="top"
+                                                                        title="Background color" style='background:#C96;'></i>
+                                                                    <div class="back-palette">
+                                                                    </div>
+                                                                </div>
+                                                                <a href="#" data-command='bold' data-toggle="tooltip"
+                                                                    data-placement="top" title="Bold"><i
+                                                                        class='fa fa-bold'></i></a>
+                                                                <a href="#" data-command='italic' data-toggle="tooltip"
+                                                                    data-placement="top" title="Italic"><i
+                                                                        class='fa fa-italic'></i></a>
+                                                                <a href="#" data-command='underline' data-toggle="tooltip"
+                                                                    data-placement="top" title="Underline"><i
+                                                                        class='fa fa-underline'></i></a>
+                                                                <a href="#" data-command='strikeThrough' data-toggle="tooltip"
+                                                                    data-placement="top" title="Strike through"><i
+                                                                        class='fa fa-strikethrough'></i></a>
+                                                                <a href="#" data-command='justifyLeft' data-toggle="tooltip"
+                                                                    data-placement="top" title="Left align"><i
+                                                                        class='fa fa-align-left'></i></a>
+                                                                <a href="#" data-command='justifyCenter'><i
+                                                                        class='fa fa-align-center' data-toggle="tooltip"
+                                                                        data-placement="top" title="Center align"></i></a>
+                                                                <a href="#" data-command='justifyRight' data-toggle="tooltip"
+                                                                    data-placement="top" title="Right align"><i
+                                                                        class='fa fa-align-right'></i></a>
+                                                                <a href="#" data-command='justifyFull' data-toggle="tooltip"
+                                                                    data-placement="top" title="Justify"><i
+                                                                        class='fa fa-align-justify'></i></a>
+                                                                <a href="#" data-command='indent' data-toggle="tooltip"
+                                                                    data-placement="top" title="Indent"><i
+                                                                        class='fa fa-indent'></i></a>
+                                                                <a href="#" data-command='outdent' data-toggle="tooltip"
+                                                                    data-placement="top" title="Outdent"><i
+                                                                        class='fa fa-outdent'></i></a>
+                                                                <a href="#" data-command='insertUnorderedList'
+                                                                    data-toggle="tooltip" data-placement="top"
+                                                                    title="Unordered list"><i class='fa fa-list-ul'></i></a>
+                                                                <a href="#" data-command='insertOrderedList'
+                                                                    data-toggle="tooltip" data-placement="top"
+                                                                    title="Ordered list"><i class='fa fa-list-ol'></i></a>
+                                                                <a href="#" data-command='h1' data-toggle="tooltip"
+                                                                    data-placement="top" title="H1">H1</a>
+                                                                <a href="#" data-command='h2' data-toggle="tooltip"
+                                                                    data-placement="top" title="H2">H2</a>
+                                                                <a href="#" data-command='createlink' data-toggle="tooltip"
+                                                                    data-placement="top" title="Insert link"><i
+                                                                        class='fa fa-link'></i></a>
+                                                                <a href="#" data-command='unlink' data-toggle="tooltip"
+                                                                    data-placement="top" title="Unlink"><i
+                                                                        class='fa fa-unlink'></i></a>
+                                                                <a href="#" data-command='insertimage' data-toggle="tooltip"
+                                                                    data-placement="top" title="Insert image"><i
+                                                                        class='fa fa-image'></i></a>
+                                                                <a href="#" data-command='p' data-toggle="tooltip"
+                                                                    data-placement="top" title="Paragraph">P</a>
+                                                                <a href="#" data-command='subscript' data-toggle="tooltip"
+                                                                    data-placement="top" title="Subscript"><i
+                                                                        class='fa fa-subscript'></i></a>
+                                                                <a href="#" data-command='superscript' data-toggle="tooltip"
+                                                                    data-placement="top" title="Superscript"><i
+                                                                        class='fa fa-superscript'></i></a>
+                                                            </div>
+                                                            <div id='editor' class="editorAria" contenteditable>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 ">
+                                                        <input type="file" class="form-control my-3">
+                                                        
+                                                    </div>
+                                                    <div class="col-12 text-end">
+                                                        <button type="submit" class="btn btn-secondary--100 shadow rounded-0  my-2 mb-4"
+                                                        href="/new-ticket.html">
+                                                        <div class="d-flex align-items-center">
+                                                            <i class="bi bi-check me-2"></i>
+                                                            <small> ارسال </small>
+                                                        </div>
+                                                    </button>
+                                                    </div>
+        
+                                                </div>
+        
+    
+        
+                                            </div>
+        
+                                        </div>
                                       
                                     </div>
                                     
@@ -380,7 +530,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="tab-pane fade show active" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab"
+                        <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab"
                         tabindex="0">
                         <div class="bg-secondary bg-opacity-25 rounded-1 p-2">
                             <p>
@@ -448,8 +598,10 @@
 
             </article>
         </section>
-    </main>
+    </main>    
+    <script src="/assets/lib/jquery.js"></script>
     <script src="/assets/lib/bootstrap.js"></script>
+    <script src="/assets/lib/wys.js"></script>
     <script src="/assets/js/master.js"></script>
 </body>
 

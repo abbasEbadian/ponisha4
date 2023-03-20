@@ -25,7 +25,6 @@ document.onreadystatechange = function () {
             $main && $main.classList.remove('collapsed');  
     })
     
-    initTabs()
     if(typeof Captcha !=='undefined' && document.querySelector('#canvas') ){
         new Captcha($('#canvas'));
     }
@@ -51,6 +50,10 @@ document.onreadystatechange = function () {
 
         })
         .trigger("input")
+
+    initTabs()
+    checkTicketTitle()
+
 }
 
 function initTabs() {
@@ -70,4 +73,14 @@ function initTabs() {
             event.target.classList.add('active')
         })
     }
+}
+function checkTicketTitle() {
+    const $tabs = $(".custom-tabs");
+    if(!$tabs.get()) return
+    $($tabs).find("[data-target]").change(function (e) {
+        $tabs.find("[data-id]").addClass('d-none')
+        const id = $(e.target).data('target')
+        $tabs.find(`[data-id=${id}]`).removeClass('d-none')
+    })
+    
 }

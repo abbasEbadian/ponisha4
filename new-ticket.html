@@ -244,31 +244,35 @@
                                         </small>
 
 
-                                        <div class="d-flex mt-3">
-                                            <div class="form-check me-4">
-                                                <input class="form-check-input" type="radio" name="flexRadioDefault"
-                                                    checked id="flexRadioDefault1">
-                                                <label class="form-check-label" for="flexRadioDefault1">
-                                                    <small> انتخاب از عناوین مرتبط</small>
-                                                </label>
+                                        <div class="custom-tabs">
+                                            <div class="d-flex mt-3">
+                                                <div class="form-check me-4">
+                                                    <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                                        checked id="flexRadioDefault1" data-target="tab1">
+                                                    <label class="form-check-label" for="flexRadioDefault1">
+                                                        <small> انتخاب از عناوین مرتبط</small>
+                                                    </label>
+                                                </div>
+    
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                                        id="flexRadioDefault2" data-target="tab2">
+                                                    <label class="form-check-label" for="flexRadioDefault2">
+                                                        <small>
+                                                            وارد کردن عنوان جدید
+                                                        </small>
+                                                    </label>
+                                                </div>
                                             </div>
+                                            <select class="form-select form-select" aria-label=".form-select-sm example" data-id="tab1">
+                                                <option selected> لطفا انتخاب کنید </option>
+                                                <option value="1"> اولویت ۱ </option>
+                                                <option value="2"> اولویت۲ </option>
+                                                <option value="3"> اولویت۳ </option>
+                                            </select>
 
-                                            <div class="form-check mt-2">
-                                                <input class="form-check-input" type="radio" name="flexRadioDefault"
-                                                    id="flexRadioDefault2">
-                                                <label class="form-check-label" for="flexRadioDefault2">
-                                                    <small>
-                                                        وارد کردن عنوان جدید
-                                                    </small>
-                                                </label>
-                                            </div>
+                                            <input class="form-control d-none" type="text" placeholder="عنوان" data-id="tab2"></input>
                                         </div>
-                                        <select class="form-select form-select" aria-label=".form-select-sm example">
-                                            <option selected> لطفا انتخاب کنید </option>
-                                            <option value="1"> اولویت ۱ </option>
-                                            <option value="2"> اولویت۲ </option>
-                                            <option value="3"> اولویت۳ </option>
-                                        </select>
 
                                         <div class="row align-items-center justify-content-center">
                                             <div class="col-12 ">
@@ -440,8 +444,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.20/summernote-bs5.min.js"
         integrity="sha512-6F1RVfnxCprKJmfulcxxym1Dar5FsT/V2jiEUvABiaEiFWoQ8yHvqRM/Slf0qJKiwin6IDQucjXuolCfCKnaJQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="/assets/js/master.js"></script>
     <script src="/assets/lib/wys.js"></script>
+    <script src="/assets/js/master.js"></script>
 </body>
 
 </html>
