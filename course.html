@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+    <link rel="stylesheet" href="./assets/lib/bootstrap.css">
+    <link rel="stylesheet" href="./assets/lib/wys.css">
+    <link rel="stylesheet" href="./assets/css/master.css">
+    <link rel="stylesheet" href="./assets/css/icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.20/summernote-bs5.min.css"
+        integrity="sha512-ngQ4IGzHQ3s/Hh8kMyG4FC74wzitukRMIcTOoKT3EyzFZCILOPF0twiXOQn75eDINUfKBYmzYn2AA8DkAk8veQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <main id="main-wrapper" class="d-flex ">
+        <aside class="sidebar bg-primary-dark ">
+            <span class="bi bi-x position-absolute d-block d-xl-none end-0 top-0 p-1 fs-3 text-white"
+                role="button"></span>
+            <div class="sidebar-header d-flex flex-column justify-content-center align-items-center py-3 text-white">
+                <span class="bi bi-person-circle fs-h2 "></span>
+                <span class="fs-5 username"> عباس عبادیان</span>
+            </div>
+            <div class="accordion" id="accordionExample">
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed py-1" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                            <i class="bi bi-speedometer2 me-3 fs-4"></i>
+                            <span> داشبورد </span>
+                            <span class="arrow bi bi-chevron-left text-white ms-auto"></span>
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse  " aria-labelledby="headingOne"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body py-1 d-flex flex-column bg-primary-dark-200 px-0">
+                            <a href="/credit.html" class="text-decoration-none py-1 px-3 "> <small>افزایش موجودی
+                            
+                                </small> </a>
+                            <a href="#dashboard_2" class="text-decoration-none py-1 px-3"> <small>فهرست تراکنش ها
+                                </small> </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed py-1" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseOneA" aria-expanded="false" aria-controls="collapseOneA">
+                            <i class="bi bi-headset me-3 fs-4"></i>
+                            <span> پشتیبانی </span>
+                            <span class="arrow bi bi-chevron-left text-white ms-auto"></span>
+                        </button>
+                    </h2>
+                    <div id="collapseOneA" class="accordion-collapse collapse  " aria-labelledby="headingOne"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body py-1 d-flex flex-column bg-primary-dark-200 px-0">
+                            <a href="/new-ticket.html" class="text-decoration-none py-1 px-3 active"> <small> تیکت جدید
+                                </small> </a>
+                            <a href="/ticket-single.html" class="text-decoration-none py-1 px-3 "> <small> فهرست تیکت ها
+                                </small> </a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed py-1" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            <i class="bi bi-globe me-3 fs-4"></i>
+                            <span> دامنه </span>
+                            <span class="arrow bi bi-chevron-left text-white ms-auto"></span>
+                        </button>
+                    </h2>
+                    <div id="collapseFour" class="accordion-collapse collapse  " aria-labelledby="headingOne"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body py-1 d-flex flex-column bg-primary-dark-200 px-0">
+                            <a href="/domains.html" class="text-decoration-none py-1 px-3 "> <small> لیست دامنه ها </small>
+                            </a>
+                            <a href="#dashboard_2" class="text-decoration-none py-1 px-3"> <small> دامنه 2 </small> </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed py-1" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            <i class="bi bi-database me-3 fs-4"></i>
+                            <span> هاست </span>
+                            <span class="arrow bi bi-chevron-left text-white ms-auto"></span>
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse  " aria-labelledby="headingOne"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body py-1 d-flex flex-column bg-primary-dark-200 px-0">
+                            <a href="#dashboard_1" class="text-decoration-none py-1 px-3 "> <small> هاست 1 </small>
+                            </a>
+                            <a href="#dashboard_2" class="text-decoration-none py-1 px-3"> <small> هاست 2 </small> </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed py-1" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            <i class="bi bi-display me-3 fs-4"></i>
+                            <span> مانیتورینگ </span>
+                            <span class="arrow bi bi-chevron-left text-white ms-auto"></span>
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse  " aria-labelledby="headingOne"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body py-1 d-flex flex-column bg-primary-dark-200 px-0">
+                            <a href="#dashboard_1" class="text-decoration-none py-1 px-3 "> <small> مانیتورینگ 1
+                                </small>
+                            </a>
+                            <a href="#dashboard_2" class="text-decoration-none py-1 px-3"> <small> مانیتورینگ 2 </small>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed py-1">
+                            <i class="bi bi-shield-check me-3 fs-4"></i>
+                            <span> گواهی SSL </span>
+                            <span class="arrow bi bi-chevron-left text-white ms-auto"></span>
+                        </button>
+                    </h2>
+
+                </div>
+
+
+
+            </div>
+        </aside>
+        <section class="main-content flex-grow-1 pt-5">
+            <header class="bg-primary-dark d-flex align-items-center text-white px-2">
+                <span class="bi bi-list fs-2" role="button"></span>
+                <span class="date"></span>
+                <div class="dropdown">
+                    <button class="btn bg-transparent border-none dropdown-toggle d-flex align-items-center"
+                        type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <span class="bi bi-person-circle fs-5 me-2"></span>
+                        <span class="name"> عباس عبادیان </span>
+                    </button>
+                    <ul class="dropdown-menu bg-dark">
+                        <li><a class="dropdown-item" href="#"> تغییر مشخصات کاربری </a></li>
+                        <li><a class="dropdown-item" href="#"> تغییر گذرواژه </a></li>
+                        <li><a class="dropdown-item" href="#"> خروج </a></li>
+                    </ul>
+                </div>
+                <span class="bi bi-bell fs-5"></span>
+
+                <div class="left-side d-flex ms-auto align-items-center">
+                    <div role="button" class="d-none d-md-block bi bi-search fs-4"></div>
+                    <div role="button" class="d-none d-md-block  bi bi-cart fs-4 mx-3"></div>
+                    <div role="button" class="d-none d-md-block bi bi-house fs-4"></div>
+
+                    <h3 class="mb-0 ms-3 title">
+                        <i>
+                            <strong>myrang</strong>
+                        </i>
+                    </h3>
+                </div>
+            </header>
+
+            <article class="p-2 p-xl-5 py-5">
+              <div class="card shadow">
+                <div class="card-header">
+                    <div class="d-flex justify-content-between text-secondary">
+                        <span>
+                            <i class="bi bi-file-earmark-play"></i>
+                            <b> فهرست ویدیوها</b>
+                        </span>
+                        <span>
+                            <small> مدت زمان دوره </small>
+                            <small class="ms-4">
+                                13:52:00
+                            </small>
+                        </span>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div class="d-flex justify-content-center">
+                        <video src="/assets/img/vid.mp4" controls width="100%"></video>
+                    </div>
+
+                    <div class="items mt-4 px-3">
+                        <div class="alert alert-info text-info px-5 item">
+                            <div class="icon">
+                                <span class="bi bi-exclamation-triangle text-success"></span>
+                            </div> 
+                            <span>با مشاهده آنلاین جلسات در سایت، هزینه اینترنت شما به صورت نیم بها محاسبه خواهد شد.</span>
+                        </div>
+
+                        <div class="item ps-5  pe-2  border">
+                            <div class="icon">
+                                <span class="bi bi-dash text-success"></span>
+                            </div> 
+                            <div class="d-flex py-2 align-items-center">
+                                <span>
+                                    دانلود فایل های ضمیمه
+                                </span>
+                                <small class="border-1 border-start ps-3 ms-3 border-secondary-subtle">
+                                    800.5 mb
+                                </small>
+                                <span class="download ms-auto pt-1">
+                                    <div class="bi bi-file-arrow-down-fill text-success fs-3" role="button"></div>
+                                </span>
+                            </div>
+                        </div>
+                        
+                        <div class="item ps-5  pe-2  border mt-3">
+                            <div class="icon">
+                                <span class="bi bi-dash text-success"></span>
+                            </div> 
+                            <div class="d-flex py-2 align-items-center">
+                                <span>
+                                    دانلود فایل های ضمیمه
+                                </span>
+                                <small class="border-1 border-start ps-3 ms-3 border-secondary-subtle">
+                                    800.5 mb
+                                </small>
+                                <span class="download ms-auto pt-1">
+                                    <div class="bi bi-file-arrow-down-fill text-success fs-3" role="button"></div>
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="item ps-5  pe-2  border mt-3">
+                            <div class="icon">
+                                <span class="bi text-success"> 1</span>
+                            </div> 
+                            <div class="d-flex py-2 align-items-center">
+                                <span>
+                                    معرفی دوره زامارین پیشرفته
+                                </span>
+                                <small class="border-1 border-end pe-3 me-3 border-secondary-subtle ms-auto text-secondary">
+                                    00:08:00
+                                </small>
+                                <span class="download  pt-1">
+                                    <div class="bi bi-file-arrow-down-fill text-success fs-3" role="button"></div>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+            </article>
+        </section>
+    </main>
+    <script src="/assets/lib/jquery.js"></script>
+    <script src="/assets/lib/bootstrap.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.20/summernote-bs5.min.js"
+        integrity="sha512-6F1RVfnxCprKJmfulcxxym1Dar5FsT/V2jiEUvABiaEiFWoQ8yHvqRM/Slf0qJKiwin6IDQucjXuolCfCKnaJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="/assets/lib/wys.js"></script>
+    <script src="/assets/js/master.js"></script>
+</body>
+
+</html>

@@ -401,3 +401,20 @@ td .chat-count{
     margin-top: 16px;
     margin-left: 16px;
 }
+
+.items .item{
+    position: relative;
+}
+.items .item .icon{
+    position: absolute;
+    right: -12px;
+    top: 12px;
+    border: 1px solid #ccc;
+    background: white;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    width: 24px;
+    height: 24px;
+    box-shadow: 0 0 10px 4px #aaa2;
+}
