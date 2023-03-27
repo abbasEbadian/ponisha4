@@ -402,10 +402,16 @@ td .chat-count{
     margin-left: 16px;
 }
 
-.items .item{
-    position: relative;
+.course-page .items {
+
+    max-height: 300px;
+    overflow: visible auto;
 }
-.items .item .icon{
+.course-page .items .item{
+    position: relative;
+    padding-inline: 24px 16px;
+}
+.course-page .items .item .icon{
     position: absolute;
     right: -12px;
     top: 12px;
@@ -417,4 +423,7 @@ td .chat-count{
     width: 24px;
     height: 24px;
     box-shadow: 0 0 10px 4px #aaa2;
+}
+.course-page video{
+    max-width: 800px;
 }

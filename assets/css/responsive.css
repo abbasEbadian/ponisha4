@@ -21,6 +21,14 @@
        
     }
 }
+@media (max-width: 576px){
+    .course-page .items {
+
+        max-height: 500px;
+        overflow: visible auto;
+    }
+}
+
 @media (max-width: 1200px){
     main#main-wrapper aside.sidebar{
         right: -360px;
