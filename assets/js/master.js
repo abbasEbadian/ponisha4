@@ -53,6 +53,7 @@ document.onreadystatechange = function () {
 
     initTabs()
     checkTicketTitle()
+    eye()
 
 }
 
@@ -83,4 +84,12 @@ function checkTicketTitle() {
         $tabs.find(`[data-id=${id}]`).removeClass('d-none')
     })
     
+}
+
+function eye() {
+    $(".iconed-input-box button").on("click", function (e) {
+        const shouldShow = !$(e.target).hasClass("text-danger")
+        $(e.target).toggleClass('text-danger')
+        $(e.target).parents('.input-group').find('input').get(0).type =  shouldShow? "text": "password"
+    })
 }
